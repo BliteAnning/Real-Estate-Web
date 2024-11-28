@@ -1,0 +1,494 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Poppins, 'sans-serif';
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.navBar{
+  font-size: 1.3rem;
+  width: 100vw;
+  max-width: 70rem;
+  height: 5rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  top: 0;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.heading{
+  display: flex;
+}
+.headName{
+  font-size: 2rem;
+  font-weight: 300;
+  color: darkblue;
+}
+ul, li, a{
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+ul>li>a{
+  text-decoration: none;
+  color: white;
+}
+ /*.mobMenus {
+  top: 6rem;
+  right: 2rem;
+  min-width: 13rem;
+  height: fit-content;
+  position: absolute;
+  z-index: 2;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  
+  
+}*/
+.mobMenus{
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+.mobMenus>li>a{
+  color: black;
+  margin: 0.5rem auto;
+}
+.mobMenus>li>a:hover{
+  border-bottom: 1px solid black;
+}
+
+.menuImg{
+  display: none;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width:910px){
+  .menuImg{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  /*.mobMenus{
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+  }*/
+  .menuLinks{
+    display: none;
+  }
+  .signUp{
+    display: none;
+  }
+  .eachPortfolio{
+    /*margin: 1.5rem 2rem;*/
+    flex: 0 0 10%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .eachPort{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Arrow{
+    display: none;
+  }
+  .eachtest{
+    border: none;
+    margin: 2rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 7px 7px 5px rgb(20, 20, 20);
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 510px){
+  .desc{
+    display: flex;
+    flex-direction: column;
+  }
+  .img1{
+    height: 20rem;
+    width: 20rem;
+  }
+  .imgPort{
+    height: 25rem;
+    width: 25rem;
+   
+  }
+  .tests{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+  .portfolio{
+    padding: 1rem 4rem;
+  }
+}
+#homePage{
+  background-image: url(./assets/hse\ bg.jpg);
+  min-height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  align-items: center; 
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: darken; 
+}
+.signUp{
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.headtext{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 5rem;
+  padding: 5rem 5rem;
+  color: white;
+  font-weight: 700;
+  font-size: medium;
+  font-size: 4rem;
+ 
+}
+.Btns{
+  display: flex;
+}
+.Btn{
+  padding: 0 1rem;
+  margin: 1rem 2rem;
+  border: 3px solid black ;
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+}
+.Btn:hover{
+  background: rgb(0, 0, 0);
+}
+
+/* about section*/
+
+#about{
+  width: 100vw;
+  max-width: 50rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  min-height: calc(100vh - 4rem);
+  text-align: center;
+  font-family: Poppins;
+}
+.aboutHeading{
+  align-items: center;
+  justify-content: center;
+}
+.Heading1{
+  font: bold;
+
+}
+.Brand{
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.aboutHeading > p{
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.img1{
+  height: 25rem;
+  width: 25rem;
+}
+.desc{
+  display: flex;
+}
+.experience{
+  display: flex;
+  flex-direction: column;
+}
+.exp{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.eachExp{
+  margin: 2rem 2rem;
+}
+.eachExp>h2{
+  font: bold;
+}
+.expDesc{
+  margin: 1.5rem 2rem;
+  font-size: 1rem;
+}
+.learnMore{
+  border: none;
+  background: rgb(60, 60, 236);
+  margin: 0.7rem 1rem;
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  color: white;
+  font: bold;
+  font-size: 1.5rem;
+}
+.learnMore:hover{
+  border: 2px white solid;
+  cursor: pointer;
+  background-color: rgb(156, 156, 233);
+}
+/*projects section */
+#projects{
+  width: 100vw;
+  min-height: calc(100vh - 4rem);
+  max-width: 75rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  align-items: center;
+  justify-content: center;
+}
+.projectHead{
+  text-align: center;
+}
+.projectHead>h1{
+  font-weight: 400;
+}
+.projectHead>p{
+  margin-top: 2rem;
+}
+.completed{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.arrows{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 2rem;
+}
+.eachPort{
+  display: flex;
+  
+  transition: transform 0.5s ease-in-out;
+}
+.imgPort{
+  height: 20rem;
+  width: 15rem;
+ 
+} 
+.Arrow{
+  height: 2rem;
+  width: 2rem;
+}
+.eachPortfolio{
+  /*margin: 1.5rem 2rem;*/
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+/*testimonials*/
+
+#testimonials{
+  width: 100vw;
+  max-width: 70rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.testHead{
+  text-align: center;
+}
+.tests{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.eachtest{
+  border: none;
+  margin: 2rem 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 7px 7px 5px rgb(20, 20, 20);
+  padding: 1rem 1rem;
+}
+/*contact*/
+#contact{
+  width: 100vw;
+  max-width: 70rem;
+  overflow: hidden;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+}
+.contactHead{
+  text-align: center;
+}
+.contactHead>h1{
+  font: bold;
+}
+.Form{
+  width: 100vw;
+  margin: 2rem auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 40rem;
+}
+.formInputs{
+  display: flex;
+}
+.yourName{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+input{
+  border: 2px solid black;
+  color: gray;
+  height: 2.5rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+}
+textarea{
+  height: 5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem;
+}
+.contactBtn{
+  padding: 0.5rem 1rem;
+  background: rgb(66, 66, 230);
+  color: white;
+  margin: 2rem 15rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.contactBtn:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/*Footer*/
+#footer{
+  width: 100vw;
+  overflow: hidden;
+  background: rgb(18, 18, 71);
+ 
+}
+.all-divs{
+  display: flex;
+  align-items: center;
+  padding: 3rem 3rem;
+  justify-content: space-between;
+  gap: 1;
+  margin: 1rem 2rem;
+}
+.estateDiv1{
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+}
+.estateImg{
+  display: flex;
+}
+.estateDesc{
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 1rem;
+  color: white;
+}
+.estateDiv2{
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  
+  align-items: center;
+  justify-content: center;
+}
+.LastDiv{
+  margin-top: 1rem;
+}
+.LastDiv>a{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.estateDiv2>h3{
+  color: rgb(10, 10, 10);
+}
+.subscription{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  margin-right: 2rem;
+
+}
+
+.mail>input{
+  border: none;
+  background: rgb(51, 51, 92);
+  height: 2.5rem;
+  width: 9rem;
+}
+.subDesc{
+  max-width: 20rem;
+  color: white;
+  margin-top: 1rem;
+}
+.subBtn{
+  padding: 1rem 0.5rem;
+  background: rgb(54, 54, 209);
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 1rem;
+}
+.subBtn:hover{
+  transform: scale(1.2);
+}
+.copyright{
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
