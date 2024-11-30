@@ -20,7 +20,7 @@ const Navbar = () => {
                     <li><a href="#testimonials">Testimonials</a></li>                
                 </ul>
             </div>
-            <button className="signUp">Sign up</button>
+            <button className="sign">Sign up</button>
             
             <img src={Menu} alt="" className="menuImg" onClick={()=> setshowMenu(!menu)}/>
             <div className="mobMenu" style={{display: menu? 'flex': 'none', transition: menu? 'opacity 0.3s ease-in-ou': 'none'}} >

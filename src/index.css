@@ -43,7 +43,7 @@ ul>li>a{
   text-decoration: none;
   color: white;
 }
- /*.mobMenus {
+ .mobMenus {
   top: 6rem;
   right: 2rem;
   min-width: 13rem;
@@ -56,16 +56,6 @@ ul>li>a{
   background: white;
   
   
-}*/
-.mobMenus{
-  display: block;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  border-radius: 5px;
 }
 .mobMenus>li>a{
   color: black;
@@ -89,20 +79,10 @@ ul>li>a{
     right: 20px;
     cursor: pointer;
   }
-  /*.mobMenus{
-    display: block;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border-radius: 5px;
-  }*/
   .menuLinks{
     display: none;
   }
-  .signUp{
+  .sign{
     display: none;
   }
   .eachPortfolio{
@@ -150,6 +130,36 @@ ul>li>a{
   .portfolio{
     padding: 1rem 4rem;
   }
+  .formInputs{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .all-divs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem 3rem;
+    justify-content: space-between;
+    gap: 1;
+    margin: 1rem 2rem;
+  }
+  .estateDiv2{
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    margin-right: 8rem;
+    align-items: center;
+    justify-content: left;
+    margin-top: 2rem;
+  }
+  .subscription{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  
+  }
 }
 #homePage{
   background-image: url(./assets/hse\ bg.jpg);
@@ -165,11 +175,11 @@ ul>li>a{
   background-color: rgba(0, 0, 0, 0.5); 
   background-blend-mode: darken; 
 }
-.signUp{
+.sign{
   background: white;
   color: black;
   border: none;
-  display: flex;
+  
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
