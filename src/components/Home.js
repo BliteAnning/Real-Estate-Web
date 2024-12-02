@@ -15,7 +15,7 @@ const Home = () => {
                 <span >Explore homes that fit your dream</span>
                 <div className="Btns">
                     <button className ='Btn'onClick={direct}>Project</button>
-                    <button className ='Btn'onClick={direct2}>Connect with us</button>
+                    <button className ='Btn2'onClick={direct2}>Connect with us</button>
                 </div>
             </div>
             
